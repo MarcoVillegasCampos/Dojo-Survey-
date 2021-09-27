@@ -7,18 +7,22 @@ app.secret_key="secret"
 
 
 
-@app.route("/", methods=["POST"])
+@app.route("/", methods=["GET"])
 def displayHome():
    
     return render_template("index.html")
 
-@app.route("/result", methods=["POST"])
+@app.route("/submit", methods=["POST"])
   
 def displayResult():
-    name=request.form['Name']
-    location=request.form['Location']
-    language=request.form['Language']
+    session['Name']=request.form['Name']
+    session['Location']=request.form['Location']
+    session['Language']=request.form['Language']
+    session['Comments']=request.form['Comments']
     
+    
+
+
     return render_template("result.html")
 
 

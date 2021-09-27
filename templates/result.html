@@ -7,13 +7,14 @@
     <title>Document</title>
 </head>
 <body>
-    <div class="container" style="background-color: cornflowerblue; height: 400px;width: 500px;">
+    <div class="container" style="background-color: cornflowerblue; height: 400px;width: 500px;" align="center">
         <div class="card" style="width: 18rem;">
             <div class="card-body">
-              <h1 class="card-title">{{session['name']}}</h1>
-              <h2 class="card-subtitle mb-2 text-muted">Card subtitle</h2>
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-              <a href="/" class="card-link">Home</a>
+              <h1 class="card-title" style="color: blanchedalmond; font-size: 50px;" >{{session['Name']}}</h1>
+              <h2 class="card-subtitle mb-2 text-muted" style="color: blanchedalmond;">Location: {{session['Location']}}</h2>
+              <p class="card-text" style="color: blanchedalmond;">Language:{{session['Language']}}</p>
+              <p class="card-text" style="color: blanchedalmond;">Comments:{{session['Comments']}}</p>
+              <a href="/" class="card-link" style="color: blanchedalmond;">Home</a>
        
             </div>
           </div>
